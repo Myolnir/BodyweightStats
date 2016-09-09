@@ -31,6 +31,7 @@ router.route('/bodyweights')
             bodyweight.exercise = req.body.exercise;  // set the bodyweight name (comes from the request)
             bodyweight.weight = req.body.weight;
             bodyweight.reps = req.body.reps;
+            bodyweight.date = Date.now()
             return bodyweight;
         }
 
@@ -91,7 +92,7 @@ router.route('/bodyweights/:bodyweight_id')
             if(req.body.reps != null && req.body.reps != ""){
                 bodyweight.reps = req.body.reps;
             }
-
+            bodyweight.date = Date.now()
             // save the bodyweight
             bodyweight.save(function(err) {
                 if (err)

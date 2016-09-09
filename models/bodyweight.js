@@ -6,7 +6,8 @@ var Schema       = mongoose.Schema;
 var BodyweightSchema   = new Schema({
     exercise: String,
     weight: String,
-    reps: String
+    reps: String,
+    date: Date
 });
 
 module.exports = mongoose.model('Bodyweight', BodyweightSchema);
