@@ -1,0 +1,7 @@
+version: '1'
+services:
+  nodejs-api:
+    container_name: nodejs_bodyweight_api
+    image: myolnir/node_bodyweight_api
+    ports:
+      - "1000:3000"
