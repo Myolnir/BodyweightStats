@@ -1,7 +1,7 @@
 // ROUTES FOR OUR API
 // =============================================================================
 var express = require('express');
-var router = express.Router(); 
+var router = express.Router();
 // get an instance of the express Router
 
 var Bodyweight = require('../models/bodyweight');
