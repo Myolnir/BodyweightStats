@@ -15,7 +15,7 @@
     "debug": "~2.6.9",
     "express": "^4.18.2",
     "jade": "~1.11.0",
-    "mongoose": "~6.11.3",
+    "mongoose": "~6.12.0",
     "morgan": "^1.9.1",
     "serve-favicon": "^2.5.0"
   }
